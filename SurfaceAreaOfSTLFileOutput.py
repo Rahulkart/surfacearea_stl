@@ -1,5 +1,4 @@
 #Author name : Rahul Karthik.S
-#Designation : Software Development Engineer
 #Program     : To calculate surface area by reading a STL file
 
 import math
@@ -41,8 +40,8 @@ def surface_area(file_path):
                 vertexZ.append(parts[2])
                 vertexZ.append(parts[3])
                 area=area+triangle_area(vertexX,vertexY,vertexZ)
-                count=0
-            
-    print(area)
-file_path = "D:/ActuatorBody.py"
-surface_area(file_path)
+                count=0            
+    return area
+file_path = "D:/SurfaceAreaOfSTLFile.py"
+total_area = surface_area(file_path)
+print("The surface area of the given STL file is",total_area)
